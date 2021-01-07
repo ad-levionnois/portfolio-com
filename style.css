@@ -1,0 +1,129 @@
+@font-face
+{
+    font-family: 'Parisienne';
+    src: url('fonts/Parisienne-Regular.ttf');
+}
+ 
+@font-face
+{
+    font-family: 'RobotoCondensed';
+    src: url('fonts/RobotoCondensed-Regular.ttf');
+}
+
+body{
+  font-family: "RobotoCondensed", serif;
+}
+
+a {
+  color: #fab1a0;
+}
+
+a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+#ad-jumbotron{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.btn-rose{
+  background-color: #fab1a0 ;
+  color: white;
+  margin-bottom: 1.2rem;
+}
+
+#photo-adeline{
+  width: 220px;
+  margin-bottom: 1.2rem;
+}
+
+#realisations{
+  font-size: 1.6rem;
+}
+
+.parisienne {
+  font-family: "Parisienne", serif;
+}
+
+.filterDiv {
+  float: left;
+  width: 23rem;
+  margin: 0.3rem;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 24px;
+  overflow: hidden;
+}
+
+.card-img-vh {
+	display: block;
+  width: 100%;
+  height: 24vh;
+  object-fit: cover;
+}
+
+/* Style the buttons */
+
+.btn-category {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn-category:hover {
+  background-color: #fab1a0;
+  color: white;
+}
+
+.btn-category.active {
+  background-color:#fab1a0;
+  color: white;
+}
+
+/* Bootstrap Custom CSS */
+
+.jumbotron{
+    /* background-image: url('img/background.jpg'); */
+    /*  background-size: cover; */
+    background-color: white !important;
+    opacity: 80%;
+    height: 100%;
+    color: black !important;
+  }
+
+.card-text {
+  height : 120px;
+  overflow: hidden;
+}
+
+#ad-underline{
+  margin-top: -1.4rem;
+}
+
+#ad-subtitles{
+  color: #fab1a0;
+}
+
+#footer{
+  margin-top: 1.5rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.card-title {
+  font-size: 1.1rem;
+}
+
+.github-projects{
+  font-size: 2.1rem;
+}

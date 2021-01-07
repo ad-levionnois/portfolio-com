@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" lang="fr" content="Adeline LEVIONNOIS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adeline LEVIONNOIS - Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="jumbotron" id="ad-jumbotron">
+        <div class="row">
+          <div class="col-md-3" style="text-align: center;">
+            <img id="photo-adeline" src="img/photo-adeline.png" alt="">
+            <a href="cv_adeline-assistante_communication.pdf"><button type="button" class="btn btn-rose btn-lg btn-block">Téléchargez mon CV</button></a>
+          </div>
+          <div class="col-md-9">
+            <h1 class="display-4 parisienne">Adeline Levionnois</h1>
+            <img src="img/underline.png" id="ad-underline" alt="underline">
+            <p class="lead" id="ad-subtitles">Communication / Web Design &nbsp; | &nbsp; <a href="https://www.linkedin.com/in/adeline-levionnois/"><i class="fab fa-linkedin-in"></i></a> &nbsp; <a href="https://github.com/ad-levionnois"> <i class="fab fa-github"></i></a></p>
+            <p>Formée dans le Web Design à l'Access Code School de Dijon, je propose mes service en tant qu'Assistante Communication. Je suis capable de concevoir et réaliser des supports de communication <em>Web</em> & <em>Print</em>, et de contribuer à l'élaboration d'une stratégie de communication globale.</p>
+            <p>Je suis rigoureuse, réactive et je sais m'adapter. J'ai soif d'apprendre et je n'ai pas peur de relever des défis. Je suis autonome lorsque des tâches me sont confiées, mais j'apprécie de travailler en équipe et d'être encadrée. </p>
+          </div>
+        </div>
+        <hr class="my-4">
+        <p id="realisations" class="parisienne"><strong>Mes Réalisations :</strong></p>
+        <div id="myBtnContainer">
+          <button class="btn-category active" onclick="filterSelection('all')"> Tous </button>
+          <button class="btn-category" onclick="filterSelection('graphique')"> Conception Graphique</button>
+          <button class="btn-category" onclick="filterSelection('web')"> Développement <em>Web</em></button>
+          <button class="btn-category" onclick="filterSelection('gestion')"> Gestion de Projet</button>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="filterDiv web graphique">
+          <div class="col-sm mt-4">
+            <div class="card">
+              <img src="img/beauvais.png" class="card-img-top card-img-vh" alt="Proposition de refonte du site de l'offisme de tourisme de Beauvais">
+              <div class="card-body">
+                <h6 class="card-title font-weight-bold parisienne">Refonte d'un site d'office de tourisme</h6>
+                <p class="card-text">Proposition de refonte d'un site Web (conception de la maquette et intégration) d'office de tourisme réalisé dans le cadre de l'Access Code School, en collaboration avec Mathieu Radjouki, Lisa El Yacoubi et Tsiry Rafanoharantsoa.</p>
+                <a href="https://adelinel.promo-42.codeur.online/integration-office-tourisme/" target="_blank" class="btn btn-rose">Consultez la page Web</a> &nbsp; <a href="https://github.com/ad-levionnois/integration-office-tourisme"><i class="fab fa-github github-projects"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filterDiv gestion graphique">
+          <div class="col-sm mt-4">
+            <div class="card">
+              <img src="img/generik.png" class="card-img-top card-img-vh" alt="Projet Generik">
+              <div class="card-body">
+                <h6 class="card-title font-weight-bold parisienne">Stratégie Marketing « Generik Paris »</h6>
+                <p class="card-text">Conception et réalisation d'un catalogue de produits capillaires dans le cadre d'une stratégie de vente B2B à destination de professionnels de la coiffure. Recherche de prospects & proposition de box d'échantillons de produits. </p>
+                <a href="projets/Catalogue.pdf" target="_blank" class="btn btn-rose">Consultez le catalogue</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filterDiv web">
+          <div class="col-sm mt-4">
+            <div class="card">
+              <img src="img/cuda.png" class="card-img-top card-img-vh" alt="Projet « Cude » : intégration d'une maquette">
+              <div class="card-body">
+                <h6 class="card-title font-weight-bold parisienne">Intégration Maquette « CUDA »</h6>
+                <p class="card-text">Projet supplémentaire d'entrainement, réalisée en juillet/août 2020 dans le cadre de ma formation Access Code School. Sur la base d'une maquette au format Desktop, adaptation Responsive design et intégration HTML/CSS/JS avec le framework Bootstrap. Mise en place en JavaScript d'un effet smooth scroll au clique sur les liens, ainsi que de progress bar et d'un bouton « scroll to top ».</p>
+                <a href="https://adelinel.promo-42.codeur.online/cuda/" target="_blank" class="btn btn-rose">Consultez la page Web</a> &nbsp; <a href="https://github.com/ad-levionnois/cuda"><i class="fab fa-github github-projects"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filterDiv web graphique">
+          <div class="col-sm mt-4">
+            <div class="card">
+              <img src="img/concession.png" class="card-img-top card-img-vh" alt="Refonte du site Web d'un concessionnaire automobile">
+              <div class="card-body">
+                <h6 class="card-title font-weight-bold parisienne">Refonte du site Web d'un concessionnaire automobile</h6>
+                <p class="card-text">Refonte (conception de la maquette et développement) du site Web d'un concessionnaire automobile dans le cadre de l'Access Code School, en collaboration avec Mathieu Radjouki, Lisa El Yacoubi et Tsiry Rafanoharantsoa.  .</p>
+                <a href="https://adelinel.promo-42.codeur.online/concession-auto/" target="_blank" class="btn btn-rose">Consultez la page Web</a> &nbsp; <a href="https://github.com/ad-levionnois/concession-automobile"><i class="fab fa-github github-projects"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <footer id="footer"><span class="parisienne">Adeline Levionnois</span> &nbsp; | &nbsp; Tous droits réservés </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+  </body>
+
+</html>
